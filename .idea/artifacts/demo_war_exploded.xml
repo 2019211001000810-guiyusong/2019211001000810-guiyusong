@@ -4,13 +4,13 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="demo" />
+          <element id="module-output" name="2019211001000810-guiyusong" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="servlet-api" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="demo/web/Web" />
+      <element id="javaee-facet-resources" facet="2019211001000810-guiyusong/web/Web" />
     </root>
   </artifact>
 </component>
