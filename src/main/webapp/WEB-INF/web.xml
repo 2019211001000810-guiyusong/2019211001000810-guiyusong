@@ -6,7 +6,7 @@
     <!--add code about new servlet-->
     <servlet>
         <servlet-name>anyName</servlet-name>
-        <servlet-class>com.example.demo.HelloServlet</servlet-class>
+        <servlet-class>com.HelloWorldServlet</servlet-class>
     </servlet>
 <servlet-mapping>
     <servlet-name>anyName</servlet-name>

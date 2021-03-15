@@ -12,6 +12,9 @@ public class HelloWorldServlet  extends HttpServlet {
         throws IOException {
         PrintWriter writer = response.getWriter();
         writer.println("Hellow Client !!!");
+        writer.println("Name:Guiyusong");
+        writer.println("ID:2019211001000810");
+        writer.println("Data and Time : 2021/3/15 20:19:00 ");
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response){
 
