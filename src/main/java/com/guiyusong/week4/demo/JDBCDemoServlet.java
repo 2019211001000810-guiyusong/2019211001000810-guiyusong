@@ -1,5 +1,7 @@
 package com.guiyusong.week4.demo;
 
+import jdk.nashorn.internal.parser.Scanner;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -9,6 +11,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 @WebServlet(
         urlPatterns ={"/jdbc"},
         initParams = {
@@ -44,12 +47,23 @@ public class JDBCDemoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     System.out.println("i am in doGet()");
-    String sql="select * from usertable";
+    String sql="select * from userTable";
+    String sql1 = "insert into userTable(username,password) values (?,?)";
+    String sql2= "delete from userTable where id= ?";
+    String sql3= "update  userTable set username=?,password=? where id= ?";
     try{
         ResultSet rs=con.createStatement().executeQuery(sql);
+        ResultSet rs1=con.createStatement().executeQuery(sql1);
+        ResultSet rs2=con.createStatement().executeQuery(sql2);
+        ResultSet rs3=con.createStatement().executeQuery(sql3);
         while(rs.next())
-        {
-        }
+        {}
+        while(rs1.next())
+        {}
+        while(rs2.next())
+        {}
+        while(rs3.next())
+        {}
     }catch (SQLException throwables){
         throwables.printStackTrace();
     }
