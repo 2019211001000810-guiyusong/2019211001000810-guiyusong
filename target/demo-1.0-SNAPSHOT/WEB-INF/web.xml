@@ -5,34 +5,21 @@
          version="4.0">
     <!--add code about new servlet-->
     <servlet>
-        <servlet-name>JDBCDemoServlet</servlet-name>
-        <servlet-class>com.guiyusong.week4.demo.JDBCDemoServlet</servlet-class>
-        <!--//String driver = "com.guiyusong.week4.demo.JDBCDemoServlet";
-        //String url="jdbc:sqlserver://loccalhost;database";
-        //String username="sa";
-        //String password ="123456"
-         -->
-        <init-param>
-            <param-name>driver</param-name>
-            <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
-        </init-param>
-        <init-param>
-            <param-name>url</param-name>
-            <param-value>jdbc:sqlserver://localhost;databaseName=userdb;</param-value>
-        </init-param>
-        <init-param>
-            <param-name>username</param-name>
-            <param-value>sa</param-value>
-        </init-param>
-        <init-param>
-            <param-name>password</param-name>
-            <param-value>123456</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
+        <servlet-name>anyName</servlet-name>
+        <servlet-class>com.HelloWorldServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.guiyusong.week3.demo.RegisterServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
-        <servlet-name>JDBCDemoServlet</servlet-name>
-        <url-pattern>jdbc</url-pattern>
+    <servlet-name>anyName</servlet-name>
+    <url-pattern>/hello</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
 </web-app>
