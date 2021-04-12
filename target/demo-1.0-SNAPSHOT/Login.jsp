@@ -12,12 +12,6 @@
 </head>
 <body>
 <%@include file ="header.jsp"%>
-<h1>Login</h1>
-<%
-if (request.getRequestDispatcher("message")==null){
-    out.println(request.getAttribute("message"));
-}
-%>
 LOGIN
 <form method ="post" action="Login">
     Username:<input type="text" name="username" required><br/>
