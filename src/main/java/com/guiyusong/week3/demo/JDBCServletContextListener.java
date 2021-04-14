@@ -1,5 +1,6 @@
 package com.guiyusong.week3.demo;
 
+import javax.servlet.Servlet;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -33,6 +34,8 @@ public class JDBCServletContextListener implements ServletContextListener{
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
         System.out.println("i am in contextDestroyed");
+        ServletContext context = sce.getServletContext();
         sce.getServletContext().removeAttribute("con");
+        context.removeAttribute("con");
     }
 }
