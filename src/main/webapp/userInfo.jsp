@@ -21,7 +21,7 @@
 </tr><tr>
         <td>Gender:</td><td><%=user.getGender()%></td>
 </tr><tr>
-        <td>Birth Date:</td><td><%=user.getBrithdate()%></td>
+        <td>Birth Date:</td><td><%=user.getBrithdate(rs.getDate("birthdate"))%></td>
 
     </tr>
 </table>
