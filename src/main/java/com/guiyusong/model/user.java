@@ -9,7 +9,8 @@ public class user {
     private String gender;
     private  java.util.Date brithdate;
 
-    public user() {
+    public user()
+    {
     }
 
 
