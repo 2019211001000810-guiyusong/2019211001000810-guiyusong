@@ -25,44 +25,16 @@ public class LoginServlet extends HttpServlet {
 
     Connection con = null;
     @Override
-    public void init()throws ServletException{
-        super.init();
-        FilterConfig sec = null;
-        ServletContext context = sec.getServletContext();
-        String driver=context.getInitParameter("driver");
-        String url=context.getInitParameter("url");
-        String username=context.getInitParameter("username");
-        String password=context.getInitParameter("password");
+    public void init()throws ServletException {
 
-        try{
-            Class.forName(driver);
-            try{
-                Connection con = DriverManager.getConnection(url,username,password);
-                System.out.println("i am in contextInitialized()-->"+con);
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-            // System.out.println("init()-->"+con);
-
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        context.setAttribute("con",con);
-        con=(Connection) getServletContext().getAttribute("con");
+        con = (Connection) getServletContext().getAttribute("con");
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
         throws IOException,ServletException{
-        doPost(request,response);
+
         request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request,response);
 
-        ServletResponse responses = null;
-        request.getRequestDispatcher("WEB-INF/view/login.jsp").forward(request,responses);
-        PrintWriter writer = response.getWriter();
-        writer.println("Hellow Client !!!");
-        writer.println("Name:Guiyusong");
-        writer.println("ID:2019211001000810");
-        writer.println("Data and Time : 2021/3/15 20:19:00 ");
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String username =request.getParameter("username");
