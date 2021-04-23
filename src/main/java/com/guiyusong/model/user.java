@@ -83,4 +83,9 @@ public class user {
                 '}';
     }
 
-}
+    public void getBrithdate() {
+
+    }
+    }
+
+
