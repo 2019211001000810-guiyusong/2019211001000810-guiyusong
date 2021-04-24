@@ -19,7 +19,7 @@ public class UserDao implements IUserDao{
         st.setString(3, user.getPassword());
         st.setString(4, user.getEmail());
         st.setString(5, user.getGender());
-        st.setDate(6,user.getBrithdate());
+        st.setDate(6,user.setBirthday());
 
         return false;
     }
@@ -53,7 +53,7 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setGender(rs.getString("gender"));
-            user.setBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
 
         }
         return 0;
@@ -73,7 +73,7 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setGender(rs.getString("gender"));
-            user.setBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
         }
         return null;
     }
@@ -94,7 +94,7 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("emsil"));
             user.setGender(rs.getString("gender"));
-            user.setBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
         }
         return null;
     }
@@ -113,7 +113,7 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setGender(rs.getString("gender"));
-            user.setBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
         }
         return null;
     }
@@ -132,7 +132,7 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setGender(rs.getString("gender"));
-            user.setBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
         }
 
         return null;
@@ -152,7 +152,7 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setGender(rs.getString("gender"));
-            user.setBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
         }
         return null;
     }
@@ -171,7 +171,7 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setGender(rs.getString("gender"));
-            user.setBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
         }
         return null;
     }
@@ -190,7 +190,7 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setGender(rs.getString("gender"));
-            user.setBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
         }
         return null;
     }
@@ -208,8 +208,11 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setGender(rs.getString("gender"));
-            user.setBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
         }
         return null;
     }
 }
+
+
+

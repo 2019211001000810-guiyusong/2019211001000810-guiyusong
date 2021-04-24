@@ -7,17 +7,17 @@ public class user {
     private String password;
     private String email;
     private String gender;
-    private  java.util.Date brithdate;
+    private  java.util.Date birthday;
 
     public user()
     {
     }
 
 
-    public user(int id, String username , String password, String email, String gender, Date brithdate){
+    public user(int id, String username , String password, String email, String gender, Date birthday){
         this.id=id;
         this.username=username;
-        this.brithdate=brithdate;
+        this.birthday = birthday;
         this.password=password;
         this.email=email;
         this.gender=gender;
@@ -44,7 +44,7 @@ public class user {
     }
 
     public  Date getBrithdate(java.sql.Date birthdate){
-        return  brithdate;
+        return birthday;
     }
 
     public void setId(int id){
@@ -67,8 +67,8 @@ public class user {
         this.gender=gender;
     }
 
-    public void setBrithdate(Date brithdate){
-        this.brithdate=brithdate;
+    public void setBirthday(Date birthday){
+        this.birthday = this.birthday;
     }
 
     @Override
@@ -79,13 +79,11 @@ public class user {
                 ",password='"+password+'\''+
                 ",email='"+email+'\''+
                 ",gender='"+gender+'\''+
-                ",birthDate='"+brithdate+'\''+
+                ",birthDate='"+ birthday +'\''+
                 '}';
     }
 
-    public void getBrithdate() {
 
-    }
-    }
+}
 
 
