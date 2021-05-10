@@ -43,7 +43,8 @@ public class user {
         return  gender;
     }
 
-    public  Date getBrithdate(java.sql.Date birthdate){
+    public  Date getBirthday()
+    {
         return birthday;
     }
 

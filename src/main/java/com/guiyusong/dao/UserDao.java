@@ -19,7 +19,7 @@ public class UserDao implements IUserDao{
         st.setString(3, user.getPassword());
         st.setString(4, user.getEmail());
         st.setString(5, user.getGender());
-        st.setDate(6,user.setBirthday());
+        st.setDate(6,(java.sql.Date) user.getBirthday());
 
         return false;
     }
@@ -36,7 +36,7 @@ public class UserDao implements IUserDao{
             user.setPassword(rs.getString("password"));
             user.setEmail(rs.getString("email"));
             user.setGender(rs.getString("gender"));
-            user.getBrithdate(rs.getDate("birthdate"));
+            user.setBirthday(rs.getDate("birthdate"));
         }
         return 0;
     }
