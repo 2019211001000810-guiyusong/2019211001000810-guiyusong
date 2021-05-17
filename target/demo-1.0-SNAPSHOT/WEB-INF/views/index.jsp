@@ -1,92 +1,68 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <%@include file="header.jsp"%>
-<h1><%= "Hellow word!!!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
-
-    <%@include file="header.jsp"%>
-    <h2>Welcome to My Online Shop Home Page </h2> <br>
-    <form method="get" target="_blank" action="search">
-    <input type ="text" n ="txt" size=30/>
-    <select n ="search">
-        <option value="baidu">Baidu</option>
-        <option value="bing">Bing</option>
-        <option value="google">Google</option>
-    </select>
-
-    <input type="submit" value="Search"/>
-    </form>
-<%@include file="footer.jsp"%>>
-<form>
-    <span style="color:white;
-     background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black;" >New User Registraintion</span><br/><br/>
-    <span style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black;" >username</span><input type="text" name="name" required="true"/><br/><br/>
-    <span style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black;" >password</span><input type="password" name="password" required="true" style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black"><br/><br/>
-    <span style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black;">Email</span><input type="email" name="email" required="ture" style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black"><br/><br/>
-    <span style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black;">Gender</span>
-    <span style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black;">Male</span><input type="radio">
-    <span style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black;">Female</span><input type="radio"><br/><br/>
-    <span style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black;">Date of birth(yyyy-mm-dd)</span><input type="date" pattern="yyyy-mm-dd" required="ture"  style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black"><br/><br/>
-    <input type="submit" value="register" style="color:white;
-                            background-color:#444444;
-                            border-width:2px;
-                            border-style:solid;
-                            border-top-width:0px;
-                            border-color:black">
-</form>
+	<section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+						</ol>
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span>E</span>-SHOPPER</h1>
+									<h2>My E-Commerce Website</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="<%=basePath%>images/home/girl1.jpg" class="girl img-responsive" alt="" />
+									<img src="<%=basePath%>images/home/pricing.png"  class="pricing" alt="" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>E</span>-SHOPPER</h1>
+									<h2>100% Responsive Design</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="<%=basePath%>images/home/girl2.jpg" class="girl img-responsive" alt="" />
+									<img src="<%=basePath%>images/home/pricing.png"  class="pricing" alt="" />
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="col-sm-6">
+									<h1><span>E</span>-SHOPPER</h1>
+									<h2>My Ecommerce Website</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="<%=basePath%>images/home/girl3.jpg" class="girl img-responsive" alt="" />
+									<img src="<%=basePath%>images/home/pricing.png" class="pricing" alt="" />
+								</div>
+							</div>
+							
+						</div>
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
 <%@include file="footer.jsp"%>
+

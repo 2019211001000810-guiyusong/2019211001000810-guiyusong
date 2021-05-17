@@ -8,6 +8,7 @@ public class user {
     private String email;
     private String gender;
     private  java.util.Date birthday;
+    private Date birthDate;
 
     public user()
     {
@@ -84,6 +85,9 @@ public class user {
                 '}';
     }
 
+
+    public void setBirthDate(java.sql.Date birthDate) { this.birthDate = this.birthday;
+    }
 
 }
 
