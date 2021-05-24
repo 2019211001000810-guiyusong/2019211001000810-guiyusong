@@ -1,5 +1,12 @@
 <%@include file="../header.jsp" %>
 
+<%@ page import="com.guiyusong.model.Product" %>
+<%@page autoFlush="false" buffer="200kb" %>
+<%@include file="../header.jsp" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
 <section id="cart_items">
 		<div class="container">
 		<div class="breadcrumbs">
