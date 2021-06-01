@@ -66,7 +66,7 @@ public class UpdateUserServlet extends HttpServlet {
             user.setPassword(Password);
             user.setEmail(Email);
             user.setGender(Gender);
-            user.setBirthDate(BirthDate);
+            user.setBirthDate((java.sql.Date) BirthDate);
 
             UserDao userDao = new UserDao();
             Connection con = (Connection) getServletContext().getAttribute("con");
